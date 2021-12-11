@@ -1,4 +1,4 @@
-.bodyColour{
+.lightblue-background{
     background-color:lightblue;
 }
 .inline{
@@ -11,7 +11,7 @@ div.center {
     padding: 10px;
 }
 
-div.border {
+.gray-border {
    border: 5px solid gray;
 }
 
