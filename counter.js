@@ -1,28 +1,19 @@
-function addValue(position){
-  if(position.id == "first") {
-    var number = document.getElementById("first");
-  } else {
-    var number = document.getElementById("second");
-  }
-  number.innerHTML = parseInt(number.innerHTML) + 1;
-  doCalculation();
+function doAdd(position){
+    var number = document.getElementById(position.id).innerHTML;
+    document.getElementById(position.id).innerHTML = ++number;
+    doCalculation();
 }
 
-function minusValue(position){
-    //var number = document.getElementById(position);
-    if(position.id == "first") {
-    var number = document.getElementById("first");
-    } else {
-    var number = document.getElementById("second");
-    }
-    number.innerHTML = parseInt(number.innerHTML) - 1;
+function doMinus(position){
+    var number = document.getElementById(position.id).innerHTML;
+    document.getElementById(position.id).innerHTML = --number;
     doCalculation();
 }
 
 function doCalculation(){
-  var number1 = document.getElementById("first");
-  var number2 = document.getElementById("second");
-  var answer = document.getElementById("answer");
-
-  answer.innerHTML = parseInt(number1.innerHTML)+parseInt(number2.innerHTML);
+    var number1 = document.getElementById("first").innerHTML;
+    var number2 = document.getElementById("second").innerHTML;
+    var answer = document.getElementById("answer").innerHTML;
+    answer = parseInt(number1) + parseInt(number2);
+    document.getElementById("answer").innerHTML = answer;
 }
