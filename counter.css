@@ -2,7 +2,7 @@
     background-color:lightblue;
 }
 .inline{
-    display: inline;
+    display: inline-block;
 }
 
 div.center {
